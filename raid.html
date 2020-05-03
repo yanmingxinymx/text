@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <script src="./JQuery/jquery-3.3.1.js"></script>
+    <script src="./js/nav.js"></script>
+    <style>
+        .show>img {
+            width: 100%;
+            height: 900px;
+        }
+
+        .show>h1 {
+            font: 600 48px/50px "Microsoft YAHEI";
+            color: white;
+            position: absolute;
+            bottom: 150px;
+            left: 200px;
+        }
+
+        .article {
+            background: url(./images/newbg.jpg);
+            white-space: pre-line;
+            color: #EBDEC2;
+            font-size: 18px;
+        }
+
+        article {
+            width: 1000px;
+            margin: 0 auto;
+            line-height: 32px;
+        }
+
+        .title {
+            font-size: 20px;
+            color: #EBDEC2;
+        }
+
+        article>b {
+            color: white
+        }
+
+        article>img {
+            width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+        <nav>
+            <div class="container">
+                <a href="./homepage.html"><img class="wow" src="./images/Logo-wow-cn.png"></a>
+                <div class="navleft">
+                    <div><a href="#race"><span>阵营<b></b></span></a>
+                        <ul class="faction">
+                            <ol class="level1">
+                                <p>可选阵营</p>
+                                <li class="alliance">联盟<ol  class="level2">
+                                    <p>可选种族</p>
+                                    <li><a href="./race.html#0">矮人</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#3">圣骑士</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#1">侏儒</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#2">人类</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#3">圣骑士</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#3">暗夜精灵</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#2">德鲁伊</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                            <li><a href="./mastery.html#11">恶魔猎手</a></li>   
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#4">德莱尼</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#3">圣骑士</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#5">狼人</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#2">德鲁伊</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#9">熊猫人</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#6">黑铁矮人</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#3">圣骑士</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#7">光铸德莱尼</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#3">圣骑士</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#8">虚空精灵</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                </ol></li>
+                                <li class="tribe">部落<ol class="level2">
+                                    <p>可选种族</p>
+                                    <li><li><a href="./race.html#10">兽人</a></li><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#11">牛头人</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#2">德鲁伊</a></li>
+                                            <li><a href="./mastery.html#3">圣骑士</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#12">巨魔</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#2">德鲁伊</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#13">亡灵</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#14">血精灵</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#3">圣骑士</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                            <li><a href="./mastery.html#11">恶魔猎手</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#15">地精</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#9">熊猫人</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#16">至高岭牛头人</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#2">德鲁伊</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#17">玛格汉兽人</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#18">夜之子</a><ol class="level3">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                </ol></li>
+                            </ol>
+                            <ol class="factionicon">
+                            </ol>
+                        </ul>
+                    </div><div><a href="./race.html"><span>种族<b></b></a></span>
+                        <ul>
+                            <ol class="level1 allianceRace">
+                                <p>联盟阵营</p>
+                                <li><a href="./race.html#0">矮人</a><ol class="level2">
+                                        <p>可选职业</p>
+                                        <li><a href="./mastery.html#0">战士</a></li>
+                                        <li><a href="./mastery.html#1">潜行者</a></li>
+                                        <li><a href="./mastery.html#3">圣骑士</a></li>
+                                        <li><a href="./mastery.html#4">法师</a></li>
+                                        <li><a href="./mastery.html#5">牧师</a></li>
+                                        <li><a href="./mastery.html#6">术士</a></li>
+                                        <li><a href="./mastery.html#7">猎人</a></li>
+                                        <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                        <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                        <li><a href="./mastery.html#10">武僧</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="./race.html#1">侏儒</a><ol class="level2">
+                                        <p>可选职业</p>
+                                        <li><a href="./mastery.html#0">战士</a></li>
+                                        <li><a href="./mastery.html#1">潜行者</a></li>
+                                        <li><a href="./mastery.html#4">法师</a></li>
+                                        <li><a href="./mastery.html#5">牧师</a></li>
+                                        <li><a href="./mastery.html#6">术士</a></li>
+                                        <li><a href="./mastery.html#7">猎人</a></li>
+                                        <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                        <li><a href="./mastery.html#10">武僧</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="./race.html#2">人类</a><ol class="level2">
+                                        <p>可选职业</p>
+                                        <li><a href="./mastery.html#0">战士</a></li>
+                                        <li><a href="./mastery.html#1">潜行者</a></li>
+                                        <li><a href="./mastery.html#3">圣骑士</a></li>
+                                        <li><a href="./mastery.html#4">法师</a></li>
+                                        <li><a href="./mastery.html#5">牧师</a></li>
+                                        <li><a href="./mastery.html#6">术士</a></li>
+                                        <li><a href="./mastery.html#7">猎人</a></li>
+                                        <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                        <li><a href="./mastery.html#10">武僧</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="./race.html#3">暗夜精灵</a><ol class="level2">
+                                        <p>可选职业</p>
+                                        <li><a href="./mastery.html#0">战士</a></li>
+                                        <li><a href="./mastery.html#1">潜行者</a></li>
+                                        <li><a href="./mastery.html#2">德鲁伊</a></li>
+                                        <li><a href="./mastery.html#4">法师</a></li>
+                                        <li><a href="./mastery.html#5">牧师</a></li>
+                                        <li><a href="./mastery.html#7">猎人</a></li>
+                                        <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                        <li><a href="./mastery.html#10">武僧</a></li>
+                                        <li><a href="./mastery.html#11">恶魔猎手</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="./race.html#4">德莱尼</a><ol class="level2">
+                                        <p>可选职业</p>
+                                        <li><a href="./mastery.html#0">战士</a></li>
+                                        <li><a href="./mastery.html#3">圣骑士</a></li>
+                                        <li><a href="./mastery.html#4">法师</a></li>
+                                        <li><a href="./mastery.html#5">牧师</a></li>
+                                        <li><a href="./mastery.html#7">猎人</a></li>
+                                        <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                        <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                        <li><a href="./mastery.html#10">武僧</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="./race.html#5">狼人</a><ol class="level2">
+                                        <p>可选职业</p>
+                                        <li><a href="./mastery.html#0">战士</a></li>
+                                        <li><a href="./mastery.html#1">潜行者</a></li>
+                                        <li><a href="./mastery.html#2">德鲁伊</a></li>
+                                        <li><a href="./mastery.html#4">法师</a></li>
+                                        <li><a href="./mastery.html#5">牧师</a></li>
+                                        <li><a href="./mastery.html#6">术士</a></li>
+                                        <li><a href="./mastery.html#7">猎人</a></li>
+                                        <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="./race.html#9">熊猫人</a><ol class="level2">
+                                        <p>可选职业</p>
+                                        <li><a href="./mastery.html#0">战士</a></li>
+                                        <li><a href="./mastery.html#1">潜行者</a></li>
+                                        <li><a href="./mastery.html#4">法师</a></li>
+                                        <li><a href="./mastery.html#5">牧师</a></li>
+                                        <li><a href="./mastery.html#7">猎人</a></li>
+                                        <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                        <li><a href="./mastery.html#10">武僧</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="./race.html#6">黑铁矮人</a><ol class="level2">
+                                        <p>可选职业</p>
+                                        <li><a href="./mastery.html#0">战士</a></li>
+                                        <li><a href="./mastery.html#1">潜行者</a></li>
+                                        <li><a href="./mastery.html#3">圣骑士</a></li>
+                                        <li><a href="./mastery.html#4">法师</a></li>
+                                        <li><a href="./mastery.html#5">牧师</a></li>
+                                        <li><a href="./mastery.html#6">术士</a></li>
+                                        <li><a href="./mastery.html#7">猎人</a></li>
+                                        <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                        <li><a href="./mastery.html#10">武僧</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="./race.html#7">光铸德莱尼</a><ol class="level2">
+                                        <p>可选职业</p>
+                                        <li><a href="./mastery.html#0">战士</a></li>
+                                        <li><a href="./mastery.html#3">圣骑士</a></li>
+                                        <li><a href="./mastery.html#4">法师</a></li>
+                                        <li><a href="./mastery.html#5">牧师</a></li>
+                                        <li><a href="./mastery.html#7">猎人</a></li>
+                                    </ol>
+                                </li>
+                                <li><a href="./race.html#8">虚空精灵</a><ol class="level2">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                </ol></li>
+                            </ol>
+                            <ol class="level1 tribeRace">
+                                <p>部落阵营</p>
+                                <li><li><a href="./race.html#10">兽人</a></li><ol class="level2">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#11">牛头人</a>><ol class="level2">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#2">德鲁伊</a></li>
+                                            <li><a href="./mastery.html#3">圣骑士</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#12">巨魔</a><ol class="level2">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#2">德鲁伊</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#13">亡灵</a><ol class="level2">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#14">血精灵</a><ol class="level2">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#3">圣骑士</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                            <li><a href="./mastery.html#11">恶魔猎手</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#15">地精</a><ol class="level2">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#9">死亡骑士</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#9">熊猫人</a><ol class="level2">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#16">至高岭牛头人</a><ol class="level2">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#2">德鲁伊</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#17">玛格汉兽人</a><ol class="level2">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#8">萨满祭司</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                                    <li><a href="./race.html#18">夜之子</a><ol class="level2">
+                                            <p>可选职业</p>
+                                            <li><a href="./mastery.html#0">战士</a></li>
+                                            <li><a href="./mastery.html#1">潜行者</a></li>
+                                            <li><a href="./mastery.html#4">法师</a></li>
+                                            <li><a href="./mastery.html#5">牧师</a></li>
+                                            <li><a href="./mastery.html#6">术士</a></li>
+                                            <li><a href="./mastery.html#7">猎人</a></li>
+                                            <li><a href="./mastery.html#10">武僧</a></li>
+                                        </ol>
+                                    </li>
+                            </ol>
+                            <ol class="factionicon">
+                            </ol>
+                        </ul>
+                    </div><div><a href="./mastery.html"><span>职业<b></b></span></a><ul>
+                        <ol class="level1 job">
+                            <p>可选职业</p>
+                            <li><a href="./mastery.html#0">战士</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#0">矮人</a></li>
+                                <li><a href="./race.html#1">侏儒</a></li>
+                                <li><a href="./race.html#2">人类</a></li>
+                                <li><a href="./race.html#3">暗夜精灵</a></li>
+                                <li><a href="./race.html#4">德莱尼</a></li>
+                                <li><a href="./race.html#5">狼人</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#6">黑铁矮人</a></li>
+                                <li><a href="./race.html#7">光铸德莱尼</a></li>
+                                <li><a href="./race.html#8">虚空精灵</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><li><a href="./race.html#10">兽人</a></li></li></li>
+                                <li><a href="./race.html#11">牛头人</a></li></li>
+                                <li><a href="./race.html#12">巨魔</a></li></li>
+                                <li><a href="./race.html#13">亡灵</a></li>
+                                <li><a href="./race.html#14">血精灵</a></li>
+                                <li><a href="./race.html#15">地精</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#16">至高岭牛头人</a></li>
+                                <li><a href="./race.html#17">玛格汉兽人</a></li>
+                                <li><a href="./race.html#18">夜之子</a></li>
+                            </ol></li>
+                            <li><a href="./mastery.html#1">潜行者</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#0">矮人</a></li>
+                                <li><a href="./race.html#1">侏儒</a></li>
+                                <li><a href="./race.html#2">人类</a></li>
+                                <li><a href="./race.html#4">德莱尼</a></li>
+                                <li><a href="./race.html#5">狼人</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#6">黑铁矮人</a></li>
+                                <li><a href="./race.html#8">虚空精灵</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><li><a href="./race.html#10">兽人</a></li></li></li>
+                                <li><a href="./race.html#12">巨魔</a></li></li>
+                                <li><a href="./race.html#13">亡灵</a></li>
+                                <li><a href="./race.html#14">血精灵</a></li>
+                                <li><a href="./race.html#15">地精</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#17">玛格汉兽人</a></li>
+                                <li><a href="./race.html#18">夜之子</a></li>
+                            </ol></li>
+                            <li><a href="./mastery.html#2">德鲁伊</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#3">暗夜精灵</a></li>
+                                <li><a href="./race.html#5">狼人</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><a href="./race.html#11">牛头人</a></li></li>
+                                <li><a href="./race.html#12">巨魔</a></li></li>
+                                <li><a href="./race.html#16">至高岭牛头人</a></li>
+                            </ol></li>
+                            <li><a href="./mastery.html#3">圣骑士</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#0">矮人</a></li>
+                                <li><a href="./race.html#2">人类</a></li>
+                                <li><a href="./race.html#4">德莱尼</a></li>
+                                <li><a href="./race.html#6">黑铁矮人</a></li>
+                                <li><a href="./race.html#7">光铸德莱尼</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><a href="./race.html#11">牛头人</a></li></li>
+                                <li><a href="./race.html#14">血精灵</a></li>
+                            </ol></li>
+                            <li><a href="./mastery.html#4">法师</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#0">矮人</a></li>
+                                <li><a href="./race.html#1">侏儒</a></li>
+                                <li><a href="./race.html#2">人类</a></li>
+                                <li><a href="./race.html#3">暗夜精灵</a></li>
+                                <li><a href="./race.html#4">德莱尼</a></li>
+                                <li><a href="./race.html#5">狼人</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#6">黑铁矮人</a></li>
+                                <li><a href="./race.html#7">光铸德莱尼</a></li>
+                                <li><a href="./race.html#8">虚空精灵</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><li><a href="./race.html#10">兽人</a></li></li></li>
+                                <li><a href="./race.html#12">巨魔</a></li></li>
+                                <li><a href="./race.html#13">亡灵</a></li>
+                                <li><a href="./race.html#14">血精灵</a></li>
+                                <li><a href="./race.html#15">地精</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#17">玛格汉兽人</a></li>
+                                <li><a href="./race.html#18">夜之子</a></li>
+                            </ol></li>
+                            <li><a href="./mastery.html#5">牧师</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#0">矮人</a></li>
+                                <li><a href="./race.html#1">侏儒</a></li>
+                                <li><a href="./race.html#2">人类</a></li>
+                                <li><a href="./race.html#3">暗夜精灵</a></li>
+                                <li><a href="./race.html#4">德莱尼</a></li>
+                                <li><a href="./race.html#5">狼人</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#6">黑铁矮人</a></li>
+                                <li><a href="./race.html#7">光铸德莱尼</a></li>
+                                <li><a href="./race.html#8">虚空精灵</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><li><a href="./race.html#10">兽人</a></li></li></li>
+                                <li><a href="./race.html#11">牛头人</a></li></li>
+                                <li><a href="./race.html#12">巨魔</a></li></li>
+                                <li><a href="./race.html#13">亡灵</a></li>
+                                <li><a href="./race.html#14">血精灵</a></li>
+                                <li><a href="./race.html#15">地精</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#17">玛格汉兽人</a></li>
+                                <li><a href="./race.html#18">夜之子</a></li>
+                            </ol></li>
+                            <li><a href="./mastery.html#6">术士</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#0">矮人</a></li>
+                                <li><a href="./race.html#1">侏儒</a></li>
+                                <li><a href="./race.html#2">人类</a></li>
+                                <li><a href="./race.html#5">狼人</a></li>
+                                <li><a href="./race.html#6">黑铁矮人</a></li>
+                                <li><a href="./race.html#8">虚空精灵</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><li><a href="./race.html#10">兽人</a></li></li></li>
+                                <li><a href="./race.html#12">巨魔</a></li></li>
+                                <li><a href="./race.html#13">亡灵</a></li>
+                                <li><a href="./race.html#14">血精灵</a></li>
+                                <li><a href="./race.html#15">地精</a></li>
+                                <li><a href="./race.html#18">夜之子</a></li>
+                            </ol></li>
+                            <li><a href="./mastery.html#7">猎人</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#0">矮人</a></li>
+                                <li><a href="./race.html#1">侏儒</a></li>
+                                <li><a href="./race.html#2">人类</a></li>
+                                <li><a href="./race.html#3">暗夜精灵</a></li>
+                                <li><a href="./race.html#4">德莱尼</a></li>
+                                <li><a href="./race.html#5">狼人</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#6">黑铁矮人</a></li>
+                                <li><a href="./race.html#7">光铸德莱尼</a></li>
+                                <li><a href="./race.html#8">虚空精灵</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><li><a href="./race.html#10">兽人</a></li></li></li>
+                                <li><a href="./race.html#11">牛头人</a></li></li>
+                                <li><a href="./race.html#12">巨魔</a></li></li>
+                                <li><a href="./race.html#13">亡灵</a></li>
+                                <li><a href="./race.html#14">血精灵</a></li>
+                                <li><a href="./race.html#15">地精</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#16">至高岭牛头人</a></li>
+                                <li><a href="./race.html#17">玛格汉兽人</a></li>
+                                <li><a href="./race.html#18">夜之子</a></li>
+                            </ol></li>
+                            <li><a href="./mastery.html#8">萨满祭司</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#0">矮人</a></li>
+                                <li><a href="./race.html#4">德莱尼</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#6">黑铁矮人</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><li><a href="./race.html#10">兽人</a></li></li></li>
+                                <li><a href="./race.html#11">牛头人</a></li></li>
+                                <li><a href="./race.html#12">巨魔</a></li></li>
+                                <li><a href="./race.html#15">地精</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#16">至高岭牛头人</a></li>
+                                <li><a href="./race.html#17">玛格汉兽人</a></li>
+                            </ol></li>
+                            <li><a href="./mastery.html#9">死亡骑士</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#0">矮人</a></li>
+                                <li><a href="./race.html#1">侏儒</a></li>
+                                <li><a href="./race.html#2">人类</a></li>
+                                <li><a href="./race.html#3">暗夜精灵</a></li>
+                                <li><a href="./race.html#4">德莱尼</a></li>
+                                <li><a href="./race.html#5">狼人</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><li><a href="./race.html#10">兽人</a></li></li></li>
+                                <li><a href="./race.html#11">牛头人</a></li></li>
+                                <li><a href="./race.html#12">巨魔</a></li></li>
+                                <li><a href="./race.html#13">亡灵</a></li>
+                                <li><a href="./race.html#14">血精灵</a></li>
+                                <li><a href="./race.html#15">地精</a></li>
+                            </ol></li>
+                            <li><a href="./mastery.html#10">武僧</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#0">矮人</a></li>
+                                <li><a href="./race.html#1">侏儒</a></li>
+                                <li><a href="./race.html#2">人类</a></li>
+                                <li><a href="./race.html#3">暗夜精灵</a></li>
+                                <li><a href="./race.html#4">德莱尼</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#6">黑铁矮人</a></li>
+                                <li><a href="./race.html#8">虚空精灵</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><li><a href="./race.html#10">兽人</a></li></li></li>
+                                <li><a href="./race.html#11">牛头人</a></li></li>
+                                <li><a href="./race.html#12">巨魔</a></li></li>
+                                <li><a href="./race.html#13">亡灵</a></li>
+                                <li><a href="./race.html#14">血精灵</a></li>
+                                <li><a href="./race.html#9">熊猫人</a></li>
+                                <li><a href="./race.html#16">至高岭牛头人</a></li>
+                                <li><a href="./race.html#17">玛格汉兽人</a></li>
+                                <li><a href="./race.html#18">夜之子</a></li>
+                            </ol></li>
+                            <li><a href="./mastery.html#11">恶魔猎手</a><ol class="level2">
+                                <p>联盟阵营可选种族</p>
+                                <li><a href="./race.html#3">暗夜精灵</a></li>
+                            </ol>
+                            <ol class="level3">
+                                <p>部落阵营可选种族</p>
+                                <li><a href="./race.html#14">血精灵</a></li>
+                            </ol></li>
+                        </ol>
+                    </ul>
+                    </div><div><span>加入战斗</span></div>
+                </div>
+            </div>
+        </nav>
+    <div class="show">
+        <img class="newbg">
+        <h1></h1>
+    </div>
+    <div class="article">
+        <article>
+            <i class="title"></i>
+            <b class="b1"></b>
+            <p class="p1"></p>
+            <b class="b2"></b>
+            <p class="p2"></p>
+            <b class="b3"></b>
+            <img class="pic1">
+            <p class="p3"></p>
+            <b class="b4"></b>
+            <img class="pic2">
+            <p class="p4"></p>
+            <b class="b5"></b>
+            <p class="p5"></p>
+            <b class="b6"></b>
+            <p class="p6"></p>
+        </article>
+    </div>
+</body>
+
+</html>
+<script>
+    $(function(){
+        var temp = null;
+	    var pageHash = window.location.hash.slice(1);
+        if(pageHash){
+            configPage(pageHash)
+        }else{
+            configPage(1)
+        }
+        function configPage(p){
+            $.ajax({
+                type:"get",
+                url:"./js/raiddata.json",
+                data: {'id':p},
+                dataType: "json",
+                error: function(e){
+                    console.log(e)
+                },
+                success:function(res){
+                    temp = res["new0"+p].data;
+                    $(".newbg").attr("src",temp.bgimg);
+                    $("h1").html(temp.h1);
+                    $(".title").html(temp.title);
+                    $(".b1").html(temp.b1);
+                    $(".b2").html(temp.b2);
+                    $(".b3").html(temp.b3);
+                    $(".b4").html(temp.b4);
+                    $(".b5").html(temp.b5);
+                    $(".b6").html(temp.b6);
+                    $(".p1").html(temp.p1);
+                    $(".p2").html(temp.p2);
+                    $(".p3").html(temp.p3);
+                    $(".p4").html(temp.p4);
+                    $(".p5").html(temp.p5);
+                    $(".p6").html(temp.p6);
+                    $(".pic1").attr("src",temp.pic1);
+                    $(".pic2").attr("src",temp.pic2);
+                }
+            })
+        }
+
+    })
+</script>

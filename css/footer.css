@@ -1,0 +1,40 @@
+/* footer */
+.footer{
+	width: 100%;
+	height: 188px;
+	background: #F7F7F7;
+	/*position: relative;*/
+}
+.footer ul{
+	width: 64%;
+	height: 60px;
+	margin:  0 auto;
+}
+.footer ul li{
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 60px;
+	margin-top: 20px;
+}
+.footer p{
+	font-size: 12px;
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+	padding: 0.2%;
+	/*margin-bottom: 25px;*/
+	/*position: absolute;*/
+	margin-bottom: 10px;
+}
+
+.footer .fif{
+	width: 50%;
+	color: #9C9A9C;
+}
+.footer .fif a{
+	color: deepskyblue;
+}
+.footer .ff{
+	margin-top: 50px;
+}

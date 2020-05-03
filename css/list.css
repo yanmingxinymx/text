@@ -1,0 +1,80 @@
+.list-header{
+	padding: 0.1px;
+}
+.main{
+	width: 100%;
+	/*height: 800px;*/
+	background: #F7F7F7;
+	margin-top: 60px;
+}
+.main>img{
+	width: 100%;
+}
+.main>.container>span{
+	position: absolute;
+	top: 21%;
+	left: 48%;
+	color: white;
+	font-size: 42px;
+}
+.news-one{
+	width: 40%;
+	padding: 10px;
+	background: white;
+	margin: 10px;
+	/*margin: 0 auto;*/
+	transition: all 0.3s ease;
+}
+.news-one:hover{
+	box-shadow: 2px 2px 5px 2px #ccc;
+}
+.news-one:hover span{
+	width: 285px;
+}
+.news-one{
+	margin-left: 5.5%;
+	margin-bottom: 2.5%;
+}
+.news-one>img , .news-one>.text{
+	float: left;
+	width: 30%;
+	
+}
+.news-one>img:hover{
+	cursor: pointer;
+}
+.news-one span{
+	display: inline-block;
+	width: 5px;
+	height: 2px;
+	border-bottom: 1px solid;
+	transition: all 1.5s ease;
+}
+.news-one>.text {
+	padding: 20px 10px;
+}
+
+.more{
+	width: 120px;
+	height: 35px;
+	font-size: 14px;
+	line-height: 35px;
+	text-align: center;
+	background: black;
+	color: white;
+	cursor: pointer;
+	outline: none;
+	border: 0 none;
+	border-radius: 15px;
+	margin-left: 45.8%;
+	transition: all 1s ease;
+}
+.more:hover{
+	background: white;
+	color: black;
+	/*border: 1px solid black;*/
+	box-shadow: 1px 1px 5px 2px black;
+}
+.main .container .new-main{
+	background: white;
+}

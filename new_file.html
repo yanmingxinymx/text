@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			ul,
+			li {
+				list-style: none;
+			}
+			.nav{
+				position: absolute;
+				top: 100px;
+				left: 200px;
+			}
+			.nav a{
+				color: purple;
+				text-decoration: none;
+				display: block;
+				font-size: 30px;
+				background: skyblue;
+				padding: 5px;
+			}
+			.didi{
+				text-align: center;
+				background: darkmagenta;
+				display: none;
+			}
+			.didi>li{
+				line-height: 2em;
+			}
+		</style>
+		<script src="js/jquery-1.12.4.js"></script>
+	</head>
+
+	<body>
+		<ul class="nav">
+			<li>
+				<a href="#">我是一级菜单</a>
+				<ul class="didi">
+					<li>我是二级菜单<>
+					<li>我是二级菜单<>
+					<li>我是二级菜单<>
+				</ul>
+			<>
+			<li>
+				<a href="#">我是一级菜单</a>
+				<ul class="didi">
+					<li>我是二级菜单<>
+					<li>我是二级菜单<>
+					<li>我是二级菜单<>
+				</ul>
+			<>
+			<li>
+				<a href="#">我是一级菜单</a>
+				<ul class="didi">
+					<li>我是二级菜单<>
+					<li>我是二级菜单<>
+					<li>我是二级菜单<>
+				</ul>
+			<>
+		</ul>
+	</body>
+	
+<ml>
+<script type="text/javascript">
+
+	$(".nav>li").on("click",function(){
+          $(this).find(".didi") .slideDown(800).end().siblings().find(".didi").slideUp().end().siblings()
+		})
+</script>

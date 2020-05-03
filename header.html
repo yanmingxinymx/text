@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script src="js/move.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".nav>.i>li").hover(function(){
+					var idth=$(this).width();
+//					$(".nav>.i>li").eq(0).css("width",idth)
+					console.log(idth)
+					$(this).find(".ii,.ii1").stop().slideDown(500,"elasticOut")
+					$(this).find("i").css("transform","rotate("+(-135+"deg"+")"))
+					$(this).find("span").css("width",idth)
+				},function(){
+					var idth=$(this).width();
+//					$(".nav>.i>li").eq(0).css("width",idth)
+					$(this).find(".ii,.ii1").stop().slideUp(500,"elasticIn")
+					$(this).find("i").css("transform","rotate("+(45+"deg"+")"))
+					$(this).find("span").css("width",0)
+//					$(".nav>.i>li")[0].css("width",0)
+					$(".header .nav .top-one").css("width",72)
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<!-- header begin -->
+		<div class="header">
+			<div class="container">
+				<div class="logo fl"><a href="index.html"><img src="jianshe/fuwu/1.jpg" alt="" /></a></div>
+				<div class="nav fr">
+					<ul class="i">
+						<li class="top-txt">
+							<span class="top-one"></span>
+							<a href="index.html">网站首页</a>
+						</li>
+						<li>
+							<span></span>
+							<a href="jituan.html">集团概况</a>
+							<i></i>
+							<ul class="ii">
+								<li><a href="jituan.html#0">公司简介</a></li>
+								<li><a href="jituan.html#1">罗尼索尔斯</a>
+									<ul class="iii">
+										<i></i>
+										<li><a href="#">罗尼索尔斯</a></li>
+										<li><a href="#">弗兰克阿布西朗</a></li>
+										<li><a href="#">扎哈劳延世</a></li>
+										<li><a href="#">伊布艾罗</a></li>
+									</ul>
+								</li>
+								<li><a href="jituan.html#2">弗兰克</a></li>
+								<li><a href="jituan.html#3">扎哈劳延世</a></li>
+								<li><a href="jituan.html#4">伊布艾罗</a></li>
+								<li><a href="jituan.html#5">发展历程</a></li>
+							</ul>
+						</li>
+						<li>
+							<span></span>
+							<a href="list.html">项目案列</a>
+							<i></i>
+							<ul class="ii">
+								<li><a href="list.html">科技</a></li>
+								<li><a href="list.html">能源</a></li>
+								<li><a href="list.html">环保</a></li>
+							</ul>
+						</li>
+						<li>
+							<span></span>
+							<a href="fuwu.html">服务范围</a>
+							<i></i>
+							<ul class="ii1">
+								<li><a href="fuwu.html">科技 Science</a></li>
+								<li><a href="fuwu.html">建设 Factory</a></li>
+								<li><a href="fuwu.html">信息 Information</a></li>
+								<li><a href="fuwu.html">网络资源 Network resources</a></li>
+								<li><a href="fuwu.html">资产管理 Assets</a></li>
+								<li><a href="fuwu.html">广告 Advertising</a></li>
+							</ul>
+						</li>
+						<li>
+							<span></span>
+							<a href="zxun.html">资讯中心</a>
+						</li>
+						<li>
+							<span></span>
+							<a href="detail.html?type=telUs">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- header end -->
+	</body>
+</html>

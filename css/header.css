@@ -1,0 +1,96 @@
+/* header */
+.header{
+	width: 100%;
+	height: 60px;
+	background: white;
+	position: relative;
+	position: fixed;
+	z-index: 999;
+}
+.header .logo{
+	margin: 5px;
+}
+.header a{
+	color: #8C8E8C;
+	font-size: 16px;
+}
+.header .nav .i>li{
+	position: relative;
+}
+.header .nav .ii{
+	width: 100px;
+	background: #F7F7F7;
+	z-index: 999;
+	display: none;
+	position: absolute;
+}
+.header .nav .ii a:hover{
+	color: black;
+}
+.header .nav .ii li{
+	padding: 10px;
+}
+.header .nav .ii1{
+	background: #F7F7F7;
+	display: none;
+	width: 250px;
+	z-index: 999;
+	position: absolute;
+}
+.header .nav .ii1 li{
+	padding: 10px;
+}
+.header .nav .ii1 a:hover{
+	color: black;
+}
+.header .nav .iii{
+	display: none;
+}
+.header .i>li{
+	float: left;
+}
+.header .i .top-txt>a{
+	color: black;
+}
+.header .i>li>a{
+	display: inline-block;
+	padding: 0 5px;
+	line-height: 60px;
+	vertical-align: middle;
+}
+.header .i>li>i{
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	border: 0 none;
+	border-bottom: 2px solid #8C8E8C;
+	border-right: 2px solid #8C8E8C;
+	/*border: 1px solid #9CAED6;*/
+	transform: rotate(45deg);
+	transition: all 0.2s ease;
+}
+.header .i>li>.top-one{
+	width: 72px;
+	border: 0 none;
+	border-bottom: 2px solid black;
+	position: absolute;
+	top: 0;
+}
+.header .i>li>span{
+	width: 0;
+	border: 0 none;
+	border-bottom: 2px solid black;
+	position: absolute;
+	top: 0;
+	transition: all 0.2s ease;
+}
+.header .i>li>a{
+	/*transition: padding-right 0.2s linear;*/
+	transition: all 0.5s ease;
+}
+.header .i>li>a:hover{
+	color: black;
+}
+
+
+

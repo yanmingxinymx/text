@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/button.css" />
+		<script src="js/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript">
+			window.onscroll = function() {
+				if(getsc().top >= $("header").offsetHeight) {
+					//          nav.className = "posFixed";
+					$("main").style.marginTop = $("main").offsetHeight + "px";
+				} else {
+					//          nav.className = "";
+					$("main").css("margin-top", 0)
+				}
+				// 如果滑动到一定位置，显示返回顶部按钮
+				if(getsc().top > 500) {
+					$("body>button").css("display", "block")
+					//          $("body>button").style.display = "block";
+				} else {
+					$("body>button").css("display", "none")
+					//          $("body>button").style.display = "none";
+				}
+				$("body>button").hover(function() {
+					$("body>button").html("回顶")
+				}, function() {
+					$("body>button").html("^")
+				})
+				//      console.log( $("body>button"))
+			}
+			// 返回顶部
+			$("body>button")[0].onclick = function() {
+				clearInterval(timer)
+				//		console.log("11")
+				var timer = setInterval(function() {
+					// 动画形式运动
+					// 元素当前的位置
+					var leader = getsc().top;
+					var tag = 0;
+					// 每次移动的距离
+					var step = (tag - leader) / 10;
+					//根据方向改变step的值
+					step = leader > tag ? Math.floor(step) : Math.ceil(step);
+
+					if(leader != tag) { // 形参(tag)
+						leader = leader + step;
+						window.scrollTo(0, leader); // 页面左上角
+					} else {
+						clearInterval(timer)
+					}
+					console.log("go")
+				}, 16)
+			}
+
+			// 封装获取scrollTop/scrollLeft
+			function getsc() {
+				return {
+					left: window.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft || 0,
+					top: window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop || 0
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<button class="butt">^</button>
+	</body>
+
+</html>

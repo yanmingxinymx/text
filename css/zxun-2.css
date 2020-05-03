@@ -1,0 +1,104 @@
+/*main4*/
+body{
+	background: #F7F7F7;
+}
+.header4{
+	padding: 0.1px;
+}
+.main4{
+	margin-top: 60px;
+}
+.main4>img{
+	width: 100%;
+}
+.main4>span{
+	font-size: 42px;
+	position: absolute;
+	top: 22%;
+	left: 50%;
+	margin-left: -84px;
+	color: white;
+}
+.main4 ul li,.main4 ul img{
+	float: left;
+	color: #9C9A9C;	
+}
+.main4 ul>li{
+	margin-left: 2%;
+}
+.main4 ul{
+	height: 160px;
+	width: 100%;
+	padding-top: 3%;
+	margin: 2%;
+	position: relative;
+}
+.main4 ul .zxun-txt-one>a{
+	font-size: 24px;
+	color: black;
+}
+.main4 ul>.zxun-txt-small{
+	margin-top: 10px;
+	line-height: 1.8em;
+}
+.main4>.container{
+	/*height: 20px;*/
+	background: white;
+}
+.main4 ul>.zxun-txt-small{
+	font-size: 12px;
+	
+}
+.main4 ul>.zxun-txt-date{
+	margin-left: 75%;
+	top: 1%;
+}
+.main4 ul>span{
+	display: inline-block;
+	width: 160px;
+	height: 2px;
+	border-bottom: 1px solid;
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+	transition: all 1.5s ease;
+}
+
+
+
+
+.main4 .zxun-foot-txt>.zxun-txt-spe>a{
+	color: #9C9A9C;
+}
+.main4 .zxun-foot-txt>.zxun-txt-spe:hover{
+	cursor: pointer;
+}
+.main4 .zxun-foot-txt{
+	width: 248px;
+	height: 42px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+.main4 .zxun-foot-txt>li{
+	/*margin: 10px;*/
+	height: 42px;
+	float: left;
+}
+.main4 .zxun-foot-txt>.zxun-txt{
+	width: 74px;
+	text-align: center;
+	line-height: 42px;
+	font-size: 14px;
+	color: #9C9A9C;
+}
+.main4 .zxun-foot-txt>.zxun-page{
+	width: 40px;
+	text-align: center;
+	line-height: 42px;
+	font-size: 14px;
+	color: #9C9A9C;
+}
+.main4 .zxun-foot-txt>.zxun-page1{
+	background: black;
+	color: white;
+}
